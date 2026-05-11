@@ -1,0 +1,26 @@
+{
+  "name": "@ok-os/geography",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./generators": "./dist/generators/index.js",
+    "./factories": "./dist/factories/index.js",
+    "./schemas": "./dist/schemas/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@ok-os/types": "workspace:*",
+    "zod": "^3.22.0"
+  }
+}

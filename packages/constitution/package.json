@@ -1,0 +1,72 @@
+{
+  "name": "@ok-os/constitution",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./execution": {
+      "import": "./dist/execution.js",
+      "types": "./dist/execution.d.ts"
+    },
+    "./design": {
+      "import": "./dist/design.js",
+      "types": "./dist/design.d.ts"
+    },
+    "./security": {
+      "import": "./dist/security.js",
+      "types": "./dist/security.d.ts"
+    },
+    "./permissions": {
+      "import": "./dist/permissions.js",
+      "types": "./dist/permissions.d.ts"
+    },
+    "./transparency": {
+      "import": "./dist/transparency.js",
+      "types": "./dist/transparency.d.ts"
+    },
+    "./audit": {
+      "import": "./dist/audit.js",
+      "types": "./dist/audit.d.ts"
+    },
+    "./trust": {
+      "import": "./dist/trust.js",
+      "types": "./dist/trust.d.ts"
+    },
+    "./workflow": {
+      "import": "./dist/workflow.js",
+      "types": "./dist/workflow.d.ts"
+    },
+    "./governance": {
+      "import": "./dist/governance.js",
+      "types": "./dist/governance.d.ts"
+    },
+    "./voting": {
+      "import": "./dist/voting.js",
+      "types": "./dist/voting.d.ts"
+    },
+    "./escalation": {
+      "import": "./dist/escalation.js",
+      "types": "./dist/escalation.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

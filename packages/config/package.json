@@ -1,0 +1,48 @@
+{
+  "name": "@ok-os/config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./env": {
+      "import": "./dist/env/index.js",
+      "types": "./dist/env/index.d.ts"
+    },
+    "./error": {
+      "import": "./dist/error/index.js",
+      "types": "./dist/error/index.d.ts"
+    },
+    "./logging": {
+      "import": "./dist/logging/index.js",
+      "types": "./dist/logging/index.d.ts"
+    },
+    "./feature-flags": {
+      "import": "./dist/feature-flags/index.js",
+      "types": "./dist/feature-flags/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

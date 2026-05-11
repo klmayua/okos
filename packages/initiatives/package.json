@@ -1,0 +1,64 @@
+{
+  "name": "@ok-os/initiatives",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./proposal": {
+      "import": "./dist/proposal/index.js",
+      "types": "./dist/proposal/index.d.ts"
+    },
+    "./deliberation": {
+      "import": "./dist/deliberation/index.js",
+      "types": "./dist/deliberation/index.d.ts"
+    },
+    "./prioritization": {
+      "import": "./dist/prioritization/index.js",
+      "types": "./dist/prioritization/index.d.ts"
+    },
+    "./budget": {
+      "import": "./dist/budget/index.js",
+      "types": "./dist/budget/index.d.ts"
+    },
+    "./execution": {
+      "import": "./dist/execution/index.js",
+      "types": "./dist/execution/index.d.ts"
+    },
+    "./proof": {
+      "import": "./dist/proof/index.js",
+      "types": "./dist/proof/index.d.ts"
+    },
+    "./reputation": {
+      "import": "./dist/reputation/index.js",
+      "types": "./dist/reputation/index.d.ts"
+    },
+    "./partnership": {
+      "import": "./dist/partnership/index.js",
+      "types": "./dist/partnership/index.d.ts"
+    },
+    "./emergency": {
+      "import": "./dist/emergency/index.js",
+      "types": "./dist/emergency/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

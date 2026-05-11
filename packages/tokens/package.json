@@ -1,0 +1,60 @@
+{
+  "name": "@ok-os/tokens",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./colors": {
+      "import": "./dist/colors.js",
+      "types": "./dist/colors.d.ts"
+    },
+    "./spacing": {
+      "import": "./dist/spacing.js",
+      "types": "./dist/spacing.d.ts"
+    },
+    "./typography": {
+      "import": "./dist/typography.js",
+      "types": "./dist/typography.d.ts"
+    },
+    "./elevation": {
+      "import": "./dist/elevation.js",
+      "types": "./dist/elevation.d.ts"
+    },
+    "./radius": {
+      "import": "./dist/radius.js",
+      "types": "./dist/radius.d.ts"
+    },
+    "./shadows": {
+      "import": "./dist/shadows.js",
+      "types": "./dist/shadows.d.ts"
+    },
+    "./motion": {
+      "import": "./dist/motion.js",
+      "types": "./dist/motion.d.ts"
+    },
+    "./breakpoints": {
+      "import": "./dist/breakpoints.js",
+      "types": "./dist/breakpoints.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

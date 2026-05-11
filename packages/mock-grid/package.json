@@ -1,0 +1,29 @@
+{
+  "name": "@ok-os/mock-grid",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./orchestrator": "./dist/orchestrator/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@ok-os/types": "workspace:*",
+    "@ok-os/geography": "workspace:*",
+    "@ok-os/personas": "workspace:*",
+    "@ok-os/time-engine": "workspace:*",
+    "@ok-os/simulation": "workspace:*",
+    "@ok-os/elections": "workspace:*",
+    "@ok-os/narratives": "workspace:*",
+    "@ok-os/initiatives-sim": "workspace:*",
+    "@ok-os/scenarios": "workspace:*"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@ok-os/personas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./generators": "./dist/generators/index.js",
+    "./factories": "./dist/factories/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@ok-os/types": "workspace:*",
+    "@ok-os/geography": "workspace:*"
+  }
+}

@@ -1,0 +1,18 @@
+export {
+  ERROR_CATEGORIES,
+  type ErrorCategory,
+  type StandardError,
+  type ErrorOptions,
+  OkosError,
+  ValidationError,
+  AuthError,
+  PermissionError,
+  ConflictError,
+  DependencyError,
+  ExternalProviderError,
+  TimeoutError,
+  SecurityError,
+  isOkosError,
+  extractErrorCategory,
+  createErrorResponse,
+} from './standard-error.js';

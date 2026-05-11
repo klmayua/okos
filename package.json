@@ -1,0 +1,122 @@
+{
+  "name": "ok-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OK.OS — Civic Operating Infrastructure",
+  "license": "PROPRIETARY",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,mdx}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,mdx}\"",
+    "prepare": "husky install",
+    "depgraph": "pnpm dedupe --tree"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-unused-imports": "^3.1.0",
+    "eslint-plugin-boundaries": "^5.0.0",
+    "husky": "^9.0.0",
+    "madge": "^6.1.0",
+    "prettier": "^3.2.0",
+    "turbo": "^1.13.0",
+    "typescript": "^5.4.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "printWidth": 100
+  },
+  "eslintConfig": {
+    "root": true,
+    "ignorePatterns": [
+      "**/dist/**",
+      "**/node_modules/**",
+      "**/.turbo/**",
+      "**/coverage/**"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:import/typescript"
+    ],
+    "plugins": [
+      "@typescript-eslint",
+      "import",
+      "unused-imports",
+      "boundaries"
+    ],
+    "rules": {
+      "import/order": "error",
+      "import/no-duplicates": "error",
+      "import/no-unused-modules": "error",
+      "unused-imports/no-unused-imports": "error",
+      "unused-imports/no-unused-vars": "error",
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/no-explicit-any": "error",
+      "boundaries/element-types": "error",
+      "boundaries/entry-point": "error"
+    },
+    "settings": {
+      "import/resolver": {
+        "typescript": {
+          "extensions": [".ts", ".tsx"]
+        }
+      },
+      "boundaries": {
+        "default": "public",
+        "capture": [
+          {
+            "from": "packages",
+            "capture": ["packages"]
+          },
+          {
+            "from": "apps",
+            "capture": ["apps"]
+          },
+          {
+            "from": "services",
+            "capture": ["services"]
+          }
+        ],
+        "rules": [
+          {
+            "from": "apps",
+            "allow": ["packages", "sdk"]
+          },
+          {
+            "from": "packages",
+            "allow": ["packages"]
+          },
+          {
+            "from": "services",
+            "allow": ["packages"]
+          }
+        ]
+      }
+    }
+  }
+}
