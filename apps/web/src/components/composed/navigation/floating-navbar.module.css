@@ -84,8 +84,15 @@
 }
 
 .actionSecondary {
-  padding: 0 24px;
-  font-size: 15px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.actionTertiary {
+  padding: 0 20px;
+  font-size: 14px;
+  background: #C8A44D;
+  color: #111111;
 }
 
 .signinBtn {

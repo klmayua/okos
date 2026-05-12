@@ -5,12 +5,12 @@ import React from 'react';
 import styles from './floating-navbar.module.css';
 
 const navItems = [
+  { label: 'Movement', href: '#movement' },
+  { label: 'Manifesto', href: '/manifesto' },
   { label: 'Initiatives', href: '#initiatives' },
-  { label: 'Verify', href: '#verify' },
-  { label: 'Track', href: '#track' },
-  { label: 'Vote', href: '#vote' },
-  { label: 'Pulse', href: '#pulse' },
-  { label: 'Transparency', href: '#transparency' },
+  { label: 'Leadership', href: '/leadership' },
+  { label: 'Transparency', href: '/transparency' },
+  { label: 'Get Involved', href: '/join' },
 ];
 
 export default function FloatingNavbar() {
@@ -18,9 +18,9 @@ export default function FloatingNavbar() {
     <header className={styles.wrapper}>
       <nav className={styles.navbar} role="navigation" aria-label="Main navigation">
         {/* Logo */}
-        <a href="/" className={styles.logo} aria-label="OK.OS Home">
+        <a href="/" className={styles.logo} aria-label="OK Movement Home">
           <div className={styles.logoBadge}>OK</div>
-          <span className={styles.logoText}>.OS</span>
+          <span className={styles.logoText}>Movement</span>
         </a>
 
         {/* Center navigation */}
@@ -40,15 +40,15 @@ export default function FloatingNavbar() {
             href="https://cvr.inecnigeria.org/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`ok-btn ok-btn-primary ${styles.actionPrimary}`}
+            className={`ok-btn ok-btn-secondary ${styles.actionSecondary}`}
           >
-            Get Your PVC
+            Get PVC
           </a>
-          <a href="#join" className={`ok-btn ok-btn-secondary ${styles.actionSecondary}`}>
+          <a href="#donate" className={`ok-btn ok-btn-premium ${styles.actionTertiary}`}>
+            Donate
+          </a>
+          <a href="/join" className={`ok-btn ok-btn-primary ${styles.actionPrimary}`}>
             Join Movement
-          </a>
-          <a href="/signin" className={styles.signinBtn}>
-            Sign In
           </a>
         </div>
       </nav>

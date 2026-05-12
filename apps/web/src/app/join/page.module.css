@@ -1,0 +1,299 @@
+.main {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(13, 92, 70, 0.12), transparent),
+    linear-gradient(180deg, #04070B 0%, #071A12 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 64px 0 80px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(13, 92, 70, 0.2);
+  border: 1px solid rgba(13, 92, 70, 0.3);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0D5C46;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #F5F7F8;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #AAB2B8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Timeline */
+.timeline {
+  padding: 64px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 64px;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #D4A64F;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.stages {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 0 40px;
+}
+
+.stages::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 80px;
+  right: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, #6B7280, #0D5C46, #0D5C46, #C8A44D, #D4A64F);
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.stageDot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 3px solid #04070B;
+}
+
+.stageName {
+  font-size: 14px;
+  font-weight: 700;
+  color: #F5F7F8;
+  margin-bottom: 4px;
+}
+
+.stageDesc {
+  font-size: 12px;
+  color: #6B7280;
+  max-width: 100px;
+}
+
+/* Pathways */
+.pathways {
+  padding: 64px 0;
+}
+
+.pathwayGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.pathwayCard {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pathwayCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.pathwayIcon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.pathwayTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #07110d;
+  margin-bottom: 8px;
+}
+
+.pathwayDesc {
+  font-size: 15px;
+  color: #5a635f;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.pathwayMeta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.pathwayCommitment {
+  font-size: 13px;
+  color: #0D5C46;
+  font-weight: 600;
+}
+
+.pathwayMembers {
+  font-size: 13px;
+  color: #6B7280;
+}
+
+.pathwayBtn {
+  width: 100%;
+  padding: 14px 24px;
+  background: #0D5C46;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pathwayBtn:hover {
+  background: #0A4A38;
+}
+
+/* Impact */
+.impact {
+  padding: 64px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.impactGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.impactCard {
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.impactValue {
+  display: block;
+  font-size: 40px;
+  font-weight: 800;
+  color: #0D5C46;
+  margin-bottom: 8px;
+}
+
+.impactLabel {
+  font-size: 14px;
+  color: #AAB2B8;
+}
+
+/* WhatsApp */
+.whatsapp {
+  padding: 64px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.whatsappTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #F5F7F8;
+  margin-bottom: 12px;
+}
+
+.whatsappDesc {
+  font-size: 18px;
+  color: #AAB2B8;
+  margin-bottom: 24px;
+}
+
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: #25D366;
+  color: #ffffff;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsappBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+}
+
+.whatsappIcon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 80px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+  }
+
+  .stages {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+  }
+
+  .stages::before {
+    display: none;
+  }
+
+  .impactGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,304 @@
+.main {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(13, 92, 70, 0.12), transparent),
+    linear-gradient(180deg, #04070B 0%, #071A12 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 64px 0 80px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(13, 92, 70, 0.2);
+  border: 1px solid rgba(13, 92, 70, 0.3);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0D5C46;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #F5F7F8;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #AAB2B8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Metrics */
+.metrics {
+  padding: 64px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #D4A64F;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.metricCard {
+  padding: 28px 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.metricHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.metricLabel {
+  font-size: 13px;
+  color: #AAB2B8;
+}
+
+.verifiedIcon {
+  width: 16px;
+  height: 16px;
+  color: #0D5C46;
+}
+
+.metricValue {
+  font-size: 32px;
+  font-weight: 800;
+  color: #F5F7F8;
+  margin-bottom: 8px;
+}
+
+.metricChange {
+  font-size: 13px;
+  color: #0D5C46;
+  font-weight: 600;
+}
+
+/* Projects */
+.projects {
+  padding: 64px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projectItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+}
+
+.projectTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #07110d;
+  margin-bottom: 4px;
+}
+
+.projectRegion {
+  font-size: 13px;
+  color: #6B7280;
+}
+
+.projectMeta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.projectAmount {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0D5C46;
+}
+
+.projectStatus {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.projectStatus[data-status="completed"] {
+  background: rgba(13, 92, 70, 0.1);
+  color: #0D5C46;
+}
+
+.projectStatus[data-status="in-progress"] {
+  background: rgba(210, 164, 71, 0.15);
+  color: #9a7a2a;
+}
+
+/* Audit */
+.audit {
+  padding: 64px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sectionDesc {
+  font-size: 18px;
+  color: #AAB2B8;
+  text-align: center;
+  max-width: 600px;
+  margin: -20px auto 40px;
+}
+
+.auditList {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.auditItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 32px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+.auditIcon {
+  width: 40px;
+  height: 40px;
+  color: #0D5C46;
+}
+
+.auditInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.auditName {
+  font-size: 15px;
+  font-weight: 600;
+  color: #F5F7F8;
+}
+
+.auditRole {
+  font-size: 13px;
+  color: #6B7280;
+}
+
+/* Download */
+.download {
+  padding: 64px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.downloadTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #F5F7F8;
+  margin-bottom: 12px;
+}
+
+.downloadDesc {
+  font-size: 18px;
+  color: #AAB2B8;
+  margin-bottom: 32px;
+}
+
+.downloadButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.downloadBtn {
+  padding: 14px 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  color: #F5F7F8;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.downloadBtn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 1024px) {
+  .metricsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 80px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .metricsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projectItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .auditList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .downloadButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
