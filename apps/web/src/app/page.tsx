@@ -4,6 +4,7 @@ import NigeriaMap from '@/maps/nigeria/nigeria-map';
 import HeroSection from '@/sections/foundational/hero/hero-section';
 import MetricPanel from '@/sections/foundational/metrics/metric-panel';
 import FeaturedInitiative from '@/sections/operational/initiatives/featured-initiative';
+import PulseSection from '@/sections/strategic/pulse-section';
 import PublicShell from '@/shells/public-shell';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <HeroSection />
         <LiveTicker />
         <FeaturedInitiative />
+        <PulseSection />
         <MetricPanel />
         <NigeriaMap />
       </main>

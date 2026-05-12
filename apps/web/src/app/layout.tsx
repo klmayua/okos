@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
+import WhatsAppButton from '@/components/ui/whatsapp-button';
 import DesignTokenProvider from '@/providers/design-token-provider';
 
 import './globals.css';
@@ -12,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'OK.OS — Civic Operating Infrastructure',
-  description: 'Nigeria Will Not Change Without Your PVC.',
+  title: 'OK Movement — Civic Infrastructure for National Renewal',
+  description: 'Building the civic infrastructure, accountability systems, and people-powered coordination needed to reclaim Nigeria\'s future.',
 };
 
 export default function RootLayout({
@@ -24,7 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.variable}>
-        <DesignTokenProvider>{children}</DesignTokenProvider>
+        <DesignTokenProvider>
+          {children}
+          <WhatsAppButton />
+        </DesignTokenProvider>
       </body>
     </html>
   );

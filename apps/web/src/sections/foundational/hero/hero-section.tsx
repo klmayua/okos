@@ -15,50 +15,53 @@ export default function HeroSection() {
           {/* Trust Badge */}
           <div className={styles.trustBadge}>
             <span className={styles.trustDot} aria-hidden="true" />
-            <span className={styles.trustText}>Official Civic Infrastructure</span>
+            <span className={styles.trustText}>A Civic Movement for National Renewal</span>
           </div>
 
           {/* Headline */}
           <h1 className={`ok-text-hero ${styles.headline}`}>
-            Your PVC Is Power.
+            Nigeria Will Not Fix Itself.
           </h1>
 
-          {/* Subtext */}
+          {/* Supporting Statement */}
           <p className={`ok-text-body-lg ${styles.subtext}`}>
-            Nigeria will not change without your PVC. Before you tweet. Before you complain.
-            Register. Verify. Vote. This is your constitutional operating system for civic action.
+            A generation is building the counter-system. OK Movement is creating the civic infrastructure, 
+            accountability systems, and people-powered coordination needed to reclaim Nigeria&apos;s future.
           </p>
 
           {/* CTAs */}
           <div className={styles.ctas}>
-            <a
-              href="https://cvr.inecnigeria.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ok-btn ok-btn-primary"
-            >
-              Get Your PVC
+            <a href="#join" className="ok-btn ok-btn-primary">
+              Join The Movement
             </a>
-            <a href="#initiatives" className="ok-btn ok-btn-secondary">
-              Explore Initiatives
+            <a href="/manifesto" className="ok-btn ok-btn-secondary">
+              Read The Manifesto
+            </a>
+            <a href="#get-involved" className="ok-btn ok-btn-premium">
+              Get Involved
             </a>
           </div>
 
           {/* Quick Metrics */}
           <div className={styles.quickMetrics}>
             <div className={styles.metric}>
+              <span className={styles.metricValue}>8,420</span>
+              <span className={styles.metricLabel}>Wards Activated</span>
+            </div>
+            <div className={styles.metricDivider} aria-hidden="true" />
+            <div className={styles.metric}>
+              <span className={styles.metricValue}>2.4M</span>
+              <span className={styles.metricLabel}>Verified Reports</span>
+            </div>
+            <div className={styles.metricDivider} aria-hidden="true" />
+            <div className={styles.metric}>
+              <span className={styles.metricValue}>47K</span>
+              <span className={styles.metricLabel}>Volunteers</span>
+            </div>
+            <div className={styles.metricDivider} aria-hidden="true" />
+            <div className={styles.metric}>
               <span className={styles.metricValue}>36</span>
-              <span className={styles.metricLabel}>States Activated</span>
-            </div>
-            <div className={styles.metricDivider} aria-hidden="true" />
-            <div className={styles.metric}>
-              <span className={styles.metricValue}>774</span>
-              <span className={styles.metricLabel}>LGAs Covered</span>
-            </div>
-            <div className={styles.metricDivider} aria-hidden="true" />
-            <div className={styles.metric}>
-              <span className={styles.metricValue}>100%</span>
-              <span className={styles.metricLabel}>Transparency</span>
+              <span className={styles.metricLabel}>States</span>
             </div>
           </div>
         </div>
