@@ -1,0 +1,9 @@
+import React from 'react';
+
+export default function SkipLinks() {
+  return (
+    <a href="#main-content" className="skip-link">
+      Skip to main content
+    </a>
+  );
+}

@@ -1,0 +1,53 @@
+/**
+ * OK.OS — ADMIN.CORE GLOBAL STYLES
+ * Governance & Treasury — Institutional dark surfaces
+ */
+
+:root {
+  --admin-bg-primary: #0A0A0B;
+  --admin-bg-secondary: #111113;
+  --admin-bg-panel: rgba(17, 17, 19, 0.9);
+  --admin-border-subtle: rgba(255, 255, 255, 0.06);
+  --admin-text-primary: #F4F5F2;
+  --admin-text-secondary: rgba(244, 245, 242, 0.7);
+  --admin-accent-green: #0D5C46;
+  --admin-accent-gold: #C8A44D;
+  --admin-accent-red: #D62839;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--admin-text-primary);
+  background: var(--admin-bg-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--admin-border-subtle);
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

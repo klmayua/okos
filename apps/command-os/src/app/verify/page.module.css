@@ -1,0 +1,147 @@
+.page {
+  max-width: 1400px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.statCard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.statLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(244, 245, 242, 0.45);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.statValue {
+  font-size: 24px;
+  font-weight: 800;
+  color: #F4F5F2;
+  line-height: 1;
+}
+
+.queuePanel {
+  padding: 24px;
+}
+
+.queueHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.mono {
+  font-family: 'SF Mono', Monaco, monospace;
+  font-size: 12px;
+}
+
+.muted {
+  color: rgba(244, 245, 242, 0.4);
+}
+
+.badge {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.badgePending {
+  background: rgba(245, 158, 11, 0.15);
+  color: #F59E0B;
+}
+
+.badgeFlagged {
+  background: rgba(214, 40, 57, 0.15);
+  color: #D62839;
+}
+
+.badgeVerified {
+  background: rgba(15, 123, 95, 0.15);
+  color: #0F7B5F;
+}
+
+.badgeProcessing {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3B82F6;
+}
+
+.badgeEscalated {
+  background: rgba(214, 40, 57, 0.2);
+  color: #D62839;
+}
+
+.confidenceBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 120px;
+}
+
+.confidenceBar div:first-child {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.confidenceFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.confidenceBar span {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(244, 245, 242, 0.7);
+  min-width: 36px;
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .queueHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

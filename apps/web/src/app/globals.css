@@ -1,0 +1,446 @@
+/* ============================================================
+   OK.OS — PUBLIC UI/UX CONSTITUTION
+   SECTION 06A.1 — DESIGN TOKEN SYSTEM & GLOBAL STYLES
+   ZERO TOLERANCE FOR DEVIATION
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   SECTION 01 — CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+   ------------------------------------------------------------ */
+
+:root {
+  /* ---- MASTER COLOR SYSTEM ---- */
+
+  /* Primary Palette */
+  --sovereign-green: #0D5C46;
+  --trust-emerald: #0F7B5F;
+  --republic-gold: #C8A44D;
+  --constitutional-black: #0A0A0B;
+  --civic-white: #FAFAF8;
+  --signal-red: #D62839;
+
+  /* Secondary Palette */
+  --fog-white: #F4F5F2;
+  --glass-white: rgba(255, 255, 255, 0.72);
+  --border-soft: rgba(255, 255, 255, 0.18);
+  --shadow-dark: rgba(0, 0, 0, 0.08);
+  --shadow-green: rgba(13, 92, 70, 0.18);
+  --gold-glow: rgba(200, 164, 77, 0.22);
+
+  /* ---- BACKGROUND ATMOSPHERIC SYSTEM ---- */
+  --bg-base-from: #FAFAF8;
+  --bg-base-to: #F4F5F2;
+  --glow-1-color: rgba(13, 92, 70, 0.08);
+  --glow-1-blur: 180px;
+  --glow-2-color: rgba(200, 164, 77, 0.08);
+  --glow-2-blur: 160px;
+  --glow-3-color: rgba(15, 123, 95, 0.05);
+  --glow-3-blur: 220px;
+
+  /* ---- GLASSMORPHISM CONSTITUTION ---- */
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-backdrop-blur: 24px;
+  --glass-border: 1px solid rgba(255, 255, 255, 0.18);
+  --glass-shadow-layer-1: 0 8px 32px rgba(0, 0, 0, 0.06);
+  --glass-shadow-layer-2: 0 2px 12px rgba(13, 92, 70, 0.08);
+  --glass-radius-desktop: 32px;
+  --glass-radius-mobile: 24px;
+  --dark-glass-bg: rgba(10, 10, 11, 0.72);
+  --dark-glass-border: 1px solid rgba(255, 255, 255, 0.08);
+
+  /* ---- SPACING CONSTITUTION ---- */
+  --section-padding-lg-desktop: 140px;
+  --section-padding-md-desktop: 100px;
+  --section-padding-sm-desktop: 72px;
+  --section-padding-lg-mobile: 96px;
+  --section-padding-md-mobile: 72px;
+  --section-padding-sm-mobile: 48px;
+  --max-content-width: 1440px;
+  --reading-width: 760px;
+  --grid-gutter-desktop: 24px;
+  --grid-gutter-tablet: 20px;
+  --grid-gutter-mobile: 16px;
+
+  /* ---- TYPOGRAPHY SYSTEM ---- */
+  --hero-size-desktop: 88px;
+  --hero-size-mobile: 52px;
+  --hero-line-height: 0.95;
+  --hero-weight: 800;
+  --hero-letter-spacing: -0.04em;
+  --h1-desktop: 64px;
+  --h1-mobile: 42px;
+  --h2-desktop: 48px;
+  --h2-mobile: 34px;
+  --h3-desktop: 32px;
+  --h3-mobile: 26px;
+  --body-large-size: 20px;
+  --body-base-size: 16px;
+  --body-line-height: 1.7;
+
+  /* ---- FLOATING NAVBAR ---- */
+  --navbar-top: 24px;
+  --navbar-height-desktop: 84px;
+  --navbar-height-mobile: 72px;
+  --navbar-bg: rgba(255, 255, 255, 0.82);
+  --navbar-blur: 24px;
+  --navbar-border: 1px solid rgba(255, 255, 255, 0.24);
+  --navbar-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  --navbar-radius: 999px;
+
+  /* ---- MOBILE BOTTOM NAVIGATION ---- */
+  --mobile-nav-height: 82px;
+  --mobile-nav-margin: 16px;
+  --mobile-nav-radius: 28px;
+  --mobile-nav-bg: rgba(255, 255, 255, 0.86);
+
+  /* ---- BUTTON SYSTEM ---- */
+  --btn-primary-bg: var(--sovereign-green);
+  --btn-primary-text: var(--civic-white);
+  --btn-primary-hover: var(--trust-emerald);
+  --btn-secondary-bg: var(--glass-white);
+  --btn-secondary-border: var(--border-soft);
+  --btn-premium-bg: var(--republic-gold);
+  --btn-premium-text: var(--constitutional-black);
+  --btn-radius: 18px;
+  --btn-height: 56px;
+  --btn-padding-x: 32px;
+
+  /* ---- PVC CARD ---- */
+  --pvc-card-height-desktop: 520px;
+
+  /* ---- TICKER ---- */
+  --ticker-bg: var(--glass-white);
+  --ticker-radius: 999px;
+}
+
+/* ------------------------------------------------------------
+   SECTION 02 — GLOBAL RESET & BASE STYLES
+   ------------------------------------------------------------ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: var(--body-base-size);
+  line-height: var(--body-line-height);
+  color: var(--constitutional-black);
+  background: linear-gradient(180deg, var(--bg-base-from) 0%, var(--bg-base-to) 100%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ------------------------------------------------------------
+   SECTION 03 — ANIMATED ATMOSPHERIC BLOBS
+   ------------------------------------------------------------ */
+
+@keyframes blob-float-1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes blob-float-2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-40px, 30px) scale(1.05);
+  }
+  66% {
+    transform: translate(20px, -40px) scale(0.95);
+  }
+}
+
+@keyframes blob-float-3 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(50px, 40px) scale(1.08);
+  }
+  66% {
+    transform: translate(-30px, -30px) scale(0.92);
+  }
+}
+
+/* ------------------------------------------------------------
+   SECTION 04 — TICKER MOTION
+   ------------------------------------------------------------ */
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ------------------------------------------------------------
+   SECTION 05 — UTILITY CLASSES
+   ------------------------------------------------------------ */
+
+.ok-container {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--grid-gutter-desktop);
+  padding-right: var(--grid-gutter-desktop);
+}
+
+.ok-section {
+  padding-top: var(--section-padding-md-desktop);
+  padding-bottom: var(--section-padding-md-desktop);
+}
+
+.ok-section-lg {
+  padding-top: var(--section-padding-lg-desktop);
+  padding-bottom: var(--section-padding-lg-desktop);
+}
+
+.ok-section-sm {
+  padding-top: var(--section-padding-sm-desktop);
+  padding-bottom: var(--section-padding-sm-desktop);
+}
+
+.ok-reading {
+  max-width: var(--reading-width);
+}
+
+/* Typography */
+.ok-text-hero {
+  font-size: var(--hero-size-desktop);
+  line-height: var(--hero-line-height);
+  font-weight: var(--hero-weight);
+  letter-spacing: var(--hero-letter-spacing);
+}
+
+.ok-text-h1 {
+  font-size: var(--h1-desktop);
+  line-height: var(--hero-line-height);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ok-text-h2 {
+  font-size: var(--h2-desktop);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ok-text-h3 {
+  font-size: var(--h3-desktop);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.ok-text-body-lg {
+  font-size: var(--body-large-size);
+  line-height: var(--body-line-height);
+}
+
+.ok-text-body {
+  font-size: var(--body-base-size);
+  line-height: var(--body-line-height);
+}
+
+/* Glass Card */
+.ok-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--glass-backdrop-blur));
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow-layer-1), var(--glass-shadow-layer-2);
+  border-radius: var(--glass-radius-desktop);
+}
+
+.ok-dark-glass {
+  background: var(--dark-glass-bg);
+  backdrop-filter: blur(var(--glass-backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--glass-backdrop-blur));
+  border: var(--dark-glass-border);
+  border-radius: var(--glass-radius-desktop);
+}
+
+/* Buttons */
+.ok-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--btn-height);
+  padding: 0 var(--btn-padding-x);
+  border-radius: var(--btn-radius);
+  font-weight: 600;
+  font-size: var(--body-base-size);
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  border: none;
+  text-decoration: none;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.ok-btn:active {
+  transform: scale(0.98);
+}
+
+.ok-btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  box-shadow: 0 4px 16px var(--shadow-green);
+}
+
+.ok-btn-primary:hover {
+  background: var(--btn-primary-hover);
+}
+
+.ok-btn-secondary {
+  background: var(--btn-secondary-bg);
+  color: var(--constitutional-black);
+  border: 1px solid var(--btn-secondary-border);
+}
+
+.ok-btn-premium {
+  background: var(--btn-premium-bg);
+  color: var(--btn-premium-text);
+}
+
+/* ------------------------------------------------------------
+   SECTION 06 — RESPONSIVE BREAKPOINTS
+   ------------------------------------------------------------ */
+
+@media (max-width: 1024px) {
+  .ok-container {
+    padding-left: var(--grid-gutter-tablet);
+    padding-right: var(--grid-gutter-tablet);
+  }
+}
+
+@media (max-width: 768px) {
+  .ok-container {
+    padding-left: var(--grid-gutter-mobile);
+    padding-right: var(--grid-gutter-mobile);
+  }
+
+  .ok-section {
+    padding-top: var(--section-padding-md-mobile);
+    padding-bottom: var(--section-padding-md-mobile);
+  }
+
+  .ok-section-lg {
+    padding-top: var(--section-padding-lg-mobile);
+    padding-bottom: var(--section-padding-lg-mobile);
+  }
+
+  .ok-section-sm {
+    padding-top: var(--section-padding-sm-mobile);
+    padding-bottom: var(--section-padding-sm-mobile);
+  }
+
+  .ok-text-hero {
+    font-size: var(--hero-size-mobile);
+  }
+
+  .ok-text-h1 {
+    font-size: var(--h1-mobile);
+  }
+
+  .ok-text-h2 {
+    font-size: var(--h2-mobile);
+  }
+
+  .ok-text-h3 {
+    font-size: var(--h3-mobile);
+  }
+
+  .ok-glass,
+  .ok-dark-glass {
+    border-radius: var(--glass-radius-mobile);
+  }
+}
+
+/* ------------------------------------------------------------
+   SECTION 07 — ACCESSIBILITY & MOTION
+   ------------------------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus indicators for accessibility */
+:focus-visible {
+  outline: 2px solid var(--sovereign-green);
+  outline-offset: 2px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--sovereign-green);
+  color: var(--civic-white);
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}

@@ -1,0 +1,124 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 6, 23, 0.92);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  z-index: 100;
+  animation: fadeIn 0.3s ease;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 48px;
+  max-width: 480px;
+  width: 90%;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.spinnerRing {
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.08);
+  border-top-color: #0D5C46;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.35);
+  transition: color 0.3s ease;
+}
+
+.stepComplete {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.stepActive {
+  color: #0F7B5F;
+  font-weight: 600;
+}
+
+.stepNumber {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.stepComplete .stepNumber {
+  background: rgba(15, 123, 95, 0.2);
+  color: #0F7B5F;
+}
+
+.stepActive .stepNumber {
+  background: rgba(15, 123, 95, 0.3);
+  color: #0F7B5F;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #0D5C46, #0F7B5F);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.progressValue {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: monospace;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

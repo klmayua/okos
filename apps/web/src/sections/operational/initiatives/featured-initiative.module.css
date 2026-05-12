@@ -1,0 +1,302 @@
+.section {
+  background: linear-gradient(180deg, rgba(13, 92, 70, 0.03) 0%, transparent 100%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 14px;
+  background: rgba(200, 164, 77, 0.12);
+  border: 1px solid rgba(200, 164, 77, 0.2);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #C8A44D;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #0A0A0B;
+  max-width: 500px;
+}
+
+.description {
+  color: rgba(10, 10, 11, 0.7);
+  max-width: 520px;
+}
+
+.methods {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.methodsTitle {
+  color: #0A0A0B;
+  font-size: 20px;
+}
+
+.methodsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.methodIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13, 92, 70, 0.08);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0D5C46;
+  flex-shrink: 0;
+}
+
+.methodText {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(10, 10, 11, 0.8);
+}
+
+.impact {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), 0 2px 12px rgba(13, 92, 70, 0.08);
+}
+
+.impactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.impactValue {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0D5C46;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.impactLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(10, 10, 11, 0.5);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.transparency {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transparencyItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(10, 10, 11, 0.7);
+}
+
+.transparencyCheck {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 123, 95, 0.12);
+  border-radius: 50%;
+  font-size: 11px;
+  color: #0F7B5F;
+  flex-shrink: 0;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.progressHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progressLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(10, 10, 11, 0.7);
+}
+
+.progressValue {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0D5C46;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 8px;
+  background: rgba(10, 10, 11, 0.06);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #0D5C46 0%, #0F7B5F 100%);
+  border-radius: 999px;
+  transition: width 1.5s ease;
+}
+
+.community {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.communityAvatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0D5C46 0%, #0F7B5F 100%);
+  border: 2px solid #FAFAF8;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FAFAF8;
+  margin-left: -10px;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.communityText {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(10, 10, 11, 0.6);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 120px;
+}
+
+.visualCard {
+  width: 100%;
+  max-width: 480px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mapPlaceholder {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(13, 92, 70, 0.04);
+}
+
+.mapLegend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(10, 10, 11, 0.6);
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .visual {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .impact {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .impactValue {
+    font-size: 22px;
+  }
+
+  .actions {
+    gap: 12px;
+  }
+}

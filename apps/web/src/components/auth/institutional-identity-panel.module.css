@@ -1,0 +1,154 @@
+.panel {
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: linear-gradient(180deg, rgba(13, 92, 70, 0.28), rgba(0, 0, 0, 0.18));
+  min-height: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoBadge {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FAFAF8;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0D5C46;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.72);
+  margin-top: -12px;
+}
+
+.statement {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 360px;
+}
+
+.trustIndicators {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.trustDot {
+  width: 6px;
+  height: 6px;
+  background: #0F7B5F;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.statusCard {
+  margin-top: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+}
+
+.statusCaption {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.statusList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.statusItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.statusoperational {
+  background: #0F7B5F;
+  animation: pulse 2.8s ease-in-out infinite;
+}
+
+.statusactive {
+  background: #3B82F6;
+  animation: pulse 2.8s ease-in-out infinite;
+}
+
+.statussynchronized {
+  background: #C8A44D;
+  animation: pulse 2.8s ease-in-out infinite;
+}
+
+.statuslive {
+  background: #0D5C46;
+  animation: pulse 2.8s ease-in-out infinite;
+}
+
+.statusLabel {
+  color: rgba(255, 255, 255, 0.6);
+  flex: 1;
+}
+
+.statusValue {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@media (max-width: 768px) {
+  .panel {
+    padding: 32px 24px;
+  }
+}

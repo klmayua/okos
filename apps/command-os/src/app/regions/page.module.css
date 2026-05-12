@@ -1,0 +1,79 @@
+.page {
+  max-width: 1400px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.regionCard {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.regionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.healthBadge {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.healthGood {
+  background: rgba(15, 123, 95, 0.15);
+  color: #0F7B5F;
+}
+
+.healthCaution {
+  background: rgba(245, 158, 11, 0.15);
+  color: #F59E0B;
+}
+
+.regionStats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statValue {
+  font-size: 22px;
+  font-weight: 800;
+  color: #F4F5F2;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: rgba(244, 245, 242, 0.45);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

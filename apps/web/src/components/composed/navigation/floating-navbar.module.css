@@ -1,0 +1,122 @@
+.wrapper {
+  position: sticky;
+  top: 24px;
+  z-index: 50;
+  padding: 0 24px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 84px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  border-radius: 999px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.logoBadge {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FAFAF8;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 16px;
+  color: #0D5C46;
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 20px;
+  color: #0A0A0B;
+  letter-spacing: -0.02em;
+}
+
+.centerNav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.navLink {
+  display: block;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #0A0A0B;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background: rgba(13, 92, 70, 0.08);
+  color: #0D5C46;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.actionPrimary {
+  padding: 0 24px;
+  font-size: 15px;
+}
+
+.actionSecondary {
+  padding: 0 24px;
+  font-size: 15px;
+}
+
+.signinBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 22px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #020617;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.signinBtn:hover {
+  background: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1024px) {
+  .centerNav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: none;
+  }
+}

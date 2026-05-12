@@ -1,0 +1,115 @@
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.gradientBase {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #FAFAF8 0%, #F4F5F2 100%);
+}
+
+.overlayGlow1 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -100px;
+  right: -100px;
+  background: rgba(13, 92, 70, 0.08);
+  filter: blur(180px);
+  border-radius: 50%;
+}
+
+.overlayGlow2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  bottom: -100px;
+  left: -100px;
+  background: rgba(200, 164, 77, 0.08);
+  filter: blur(160px);
+  border-radius: 50%;
+}
+
+.overlayGlow3 {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(15, 123, 95, 0.05);
+  filter: blur(220px);
+  border-radius: 50%;
+}
+
+/* Animated blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  will-change: transform;
+}
+
+.blob1 {
+  width: 400px;
+  height: 400px;
+  background: #0D5C46;
+  top: 10%;
+  left: 10%;
+  animation: blob-float-1 18s ease-in-out infinite;
+}
+
+.blob2 {
+  width: 350px;
+  height: 350px;
+  background: #C8A44D;
+  top: 60%;
+  right: 10%;
+  animation: blob-float-2 24s ease-in-out infinite;
+}
+
+.blob3 {
+  width: 450px;
+  height: 450px;
+  background: #0F7B5F;
+  bottom: 10%;
+  left: 40%;
+  animation: blob-float-3 30s ease-in-out infinite;
+}
+
+@keyframes blob-float-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+@keyframes blob-float-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-40px, 30px) scale(1.05); }
+  66% { transform: translate(20px, -40px) scale(0.95); }
+}
+
+@keyframes blob-float-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(50px, 40px) scale(1.08); }
+  66% { transform: translate(-30px, -30px) scale(0.92); }
+}
+
+@media (max-width: 768px) {
+  .blob3 {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob1,
+  .blob2,
+  .blob3 {
+    animation: none;
+  }
+}

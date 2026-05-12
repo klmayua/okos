@@ -1,0 +1,75 @@
+.section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), 0 2px 12px rgba(13, 92, 70, 0.08);
+  padding: 16px 0;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  width: max-content;
+  animation: ticker-scroll 30s linear infinite;
+  will-change: transform;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 0 8px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #0F7B5F;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(10, 10, 11, 0.6);
+  white-space: nowrap;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0D5C46;
+  white-space: nowrap;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+  .dot {
+    animation: none;
+  }
+}

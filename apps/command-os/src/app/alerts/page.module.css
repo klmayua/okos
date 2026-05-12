@@ -1,0 +1,129 @@
+.page {
+  max-width: 1400px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.statCard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.statCount {
+  font-size: 32px;
+  font-weight: 800;
+  color: #F4F5F2;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(244, 245, 242, 0.45);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.alertList {
+  padding: 24px;
+}
+
+.alertList h3 {
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.alertItem {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.alertHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.severityBadge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sevInfo {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3B82F6;
+}
+
+.sevCaution {
+  background: rgba(245, 158, 11, 0.15);
+  color: #F59E0B;
+}
+
+.sevWarning {
+  background: rgba(234, 88, 12, 0.15);
+  color: #EA580C;
+}
+
+.sevCritical {
+  background: rgba(214, 40, 57, 0.2);
+  color: #D62839;
+}
+
+.alertType {
+  font-size: 13px;
+  font-weight: 600;
+  color: #F4F5F2;
+}
+
+.alertId {
+  font-size: 11px;
+  font-family: monospace;
+  color: rgba(244, 245, 242, 0.4);
+}
+
+.alertTime {
+  font-size: 12px;
+  color: rgba(244, 245, 242, 0.4);
+  margin-left: auto;
+}
+
+.alertMessage {
+  font-size: 14px;
+  color: rgba(244, 245, 242, 0.7);
+  margin-bottom: 4px;
+}
+
+.alertRegion {
+  font-size: 12px;
+  color: rgba(244, 245, 242, 0.5);
+}
+
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
