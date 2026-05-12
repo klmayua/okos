@@ -11,7 +11,7 @@ export default function FeaturedInitiative() {
         <div className={styles.grid}>
           {/* Left Content */}
           <div className={styles.content}>
-            <span className={styles.badge}>Featured Initiative</span>
+            <span className={styles.badge}>Current National Campaign</span>
             <h2 className={`ok-text-h2 ${styles.title}`}>One Vote. One PVC.</h2>
             <p className={`ok-text-body-lg ${styles.description}`}>
               A nationwide civic mobilization to ensure every eligible Nigerian is registered,

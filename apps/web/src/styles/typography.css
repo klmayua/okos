@@ -1,0 +1,73 @@
+/* ============================================================
+   OK MOVEMENT — TYPOGRAPHY SYSTEM
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ---- HEADINGS ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+  color: var(--ok-black);
+}
+
+.h1 { font-size: var(--text-5xl); }
+.h2 { font-size: var(--text-4xl); }
+.h3 { font-size: var(--text-3xl); }
+.h4 { font-size: var(--text-2xl); }
+
+/* ---- BODY ---- */
+p {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--ok-black);
+}
+
+.text-lg {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+/* ---- DISPLAY ---- */
+.display-hero {
+  font-size: var(--text-hero);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.display-h1 {
+  font-size: var(--text-5xl);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* ---- LABELS ---- */
+.label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ---- LINKS ---- */
+a {
+  color: var(--ok-green-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--trust-emerald);
+}

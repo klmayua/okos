@@ -15,32 +15,35 @@ export default function HeroSection() {
           {/* Trust Badge */}
           <div className={styles.trustBadge}>
             <span className={styles.trustDot} aria-hidden="true" />
-            <span className={styles.trustText}>Official Civic Infrastructure</span>
+            <span className={styles.trustText}>A Civic Movement for National Renewal</span>
           </div>
 
           {/* Headline */}
           <h1 className={`ok-text-hero ${styles.headline}`}>
-            Your PVC Is Power.
+            Nigeria Will Not Fix Itself.
           </h1>
 
           {/* Subtext */}
           <p className={`ok-text-body-lg ${styles.subtext}`}>
-            Nigeria will not change without your PVC. Before you tweet. Before you complain.
-            Register. Verify. Vote. This is your constitutional operating system for civic action.
+            OK Movement is building the civic infrastructure, accountability systems, 
+            cultural momentum, and people-powered coordination needed to reclaim Nigeria&apos;s future.
           </p>
 
           {/* CTAs */}
           <div className={styles.ctas}>
+            <a href="#join" className="ok-btn ok-btn-primary">
+              Join Movement
+            </a>
+            <a href="/manifesto" className="ok-btn ok-btn-secondary">
+              Read Manifesto
+            </a>
             <a
               href="https://cvr.inecnigeria.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="ok-btn ok-btn-primary"
+              className="ok-btn ok-btn-premium"
             >
-              Get Your PVC
-            </a>
-            <a href="#initiatives" className="ok-btn ok-btn-secondary">
-              Explore Initiatives
+              Get PVC
             </a>
           </div>
 
