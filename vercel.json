@@ -1,13 +1,4 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "version": 2,
-  "name": "okos",
-  "buildCommand": "pnpm build",
-  "outputDirectory": "packages/types/dist",
-  "framework": null,
-  "installCommand": "pnpm install",
-  "regions": ["iad1"],
-  "github": {
-    "enabled": false
-  }
+  "buildCommand": "cd apps/web && pnpm build",
+  "outputDirectory": "apps/web/.next"
 }
